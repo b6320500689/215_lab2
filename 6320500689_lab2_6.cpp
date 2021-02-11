@@ -1,32 +1,28 @@
 #include<stdio.h>
-#include<string.h>
-int main() {
-	
-	unsigned int x=0;
-	char y[10][10]= {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"};
-	int c[20];
-	int i,j;
-	
-	if (x>=0 && x<=10000000);
-		scanf("%d",&x);
-		
-	for (i=0;x>0;i++)
-	{
-		c[i]= x%10;
-		x= x/10;
-	}
-	
-	for (i--;i>=0;i--)
-	{
-		for (j=0;j<10;j++)
-			if (c[i]==j)
-			{
-				printf("%s",y[j]);
-			}
-			if (i!=0)
-			{
-				printf("-");
-			}
-	}
-	return 0;
+int main()
+{
+    char n[15];
+    int i;
+    scanf("%s",n);
+    for(i=0;i<n[i];i++)
+    {
+        switch(n[i])
+        {
+            case '0': printf("Zero"); break;
+            case '1': printf("One") ; break;
+            case '2': printf("Two") ; break;
+            case '3': printf("Three"); break;
+            case '4': printf("Four") ; break;
+            case '5': printf("Five") ; break;
+            case '6': printf("Six")  ; break;
+            case '7': printf("Seven") ; break;
+            case '8': printf("Eight") ; break;
+            case '9': printf("Nine")  ; break;
+        }
+        if(i<n[i+1])
+        {
+            printf("-");
+        }
+    }
+    return 0;
 }
