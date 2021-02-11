@@ -5,17 +5,24 @@ int main (){
 	char x[5];
 	int y[5];
 	scanf("%d %d %d",&a,&b,&c);
-	if(i < 3-1 && y[i] > y[i+1])
-        {
-            j = y[i+1];
-            y[i+1] = y[i];
-            y[i] = j;
-            i = 0;
-        }
-        else
-        {
-            i++;
-        }
+	if(a>b)
+	{
+		j=a;
+		a=b;
+		b=j;
+	}
+	if(a>c)
+	{
+		j=a;
+		a=c;
+		c=j;
+	}
+	if(b>c)
+	{
+		j=b;
+		b=c;
+		c=j;
+	}
 	scanf("%s",&x);
 	
 	for(i=0;i<3;i++)
