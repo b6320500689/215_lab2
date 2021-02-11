@@ -4,7 +4,7 @@ int main (){
 	int a,b,c,i,j;
 	char x[5];
 	int y[5];
-	scanf("%d %d %d" ,&a,&b,&c);
+	scanf("%d %d %d",&a,&b,&c);
 	if(a>b)
 	{
 		j=a;
