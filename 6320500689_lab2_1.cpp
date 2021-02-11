@@ -6,7 +6,7 @@ int main (){
 		scanf("%d",&a);
 	if(b>=0 && b<=30)
 		scanf("%d",&b);
-	if(a>=0 && b<=30)
+	if(a>=0 && b<=40)
 		scanf("%d",&c);
 	x=a+b+c;
 	if(x>=0 && x<=49)
